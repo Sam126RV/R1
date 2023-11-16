@@ -17,5 +17,16 @@ namespace Prueba12Nov.Models
     public List<Demanda> ListaDemanda {get; set} = new List<Demanda>();
     
     public DateTime FechaDisponible {get; set;}
+
+    public vehiculo()  {}
+
+    public vehiculo(double capacidad, double latitudOrigenCondicionInicial, double longitudOrigenCondicionInicial, List<Demanda> listaDemanda, DateTime fechaDisponible)  {
+      Capacidad = capacidad;
+      LatitudOrigenCondicionInicial = latitudOrigenCondicionInicial;
+      LongitudOrigenCondicionInicial = longitudOrigenCondicionInicial;
+      ListaDemanda = listaDemanda;
+      FechaDisponible = fechaDisponible;
+      
+    }
     }
   }
